@@ -1,8 +1,18 @@
+buildscript {
+    ext.kotlin_version = '1.4.21'
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
 plugins {
     id 'java'
 }
 
 apply plugin: 'java'
+apply plugin: 'kotlin'
 apply plugin: 'maven'
 
 group 'cz.craftmania.pack'
@@ -29,9 +39,20 @@ dependencies {
     compileOnly ('org.spigotmc:spigot-api:1.16.4-R0.1-SNAPSHOT') {
         exclude group: 'net.md-5'
     }
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 }
 
 task compilePlugin(type: Jar) {
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
+}
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "14"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "14"
+    }
 }
