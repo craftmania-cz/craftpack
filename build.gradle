@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+}
+
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group 'cz.craftmania.pack'
+version '0.0.1'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+// Nastaveni UTF
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+clean { delete "./target" }
+clean { delete "./build" }
+
+repositories {
+    mavenCentral()
+    maven { url "https://packages.craftmania.cz/repository/craftmania/" }
+    maven { url "https://hub.spigotmc.org/nexus/content/repositories/snapshots/" }
+}
+
+dependencies {
+    compileOnly ('org.spigotmc:spigot-api:1.16.4-R0.1-SNAPSHOT') {
+        exclude group: 'net.md-5'
+    }
+}
+
+task compilePlugin(type: Jar) {
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
