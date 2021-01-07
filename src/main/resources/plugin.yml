@@ -2,4 +2,4 @@ name: CraftEconomy
 version: 1.0.0
 description: Plugin for managing our server Resource Pack.
 author: MrWakeCZ
-main: cz.craftmania.pack.Main
+main: cz.craftmania.craftpack.Main

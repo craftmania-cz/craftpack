@@ -1,4 +1,4 @@
-package cz.craftmania.pack.api
+package cz.craftmania.craftpack.api
 
 import cz.craftmania.craftcore.spigot.builders.items.ItemBuilder
 import org.bukkit.Material

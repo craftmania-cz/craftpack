@@ -1,6 +1,6 @@
-package cz.craftmania.pack.utils
+package cz.craftmania.craftpack.utils
 
-import cz.craftmania.pack.Main
+import cz.craftmania.craftpack.Main
 import org.bukkit.Bukkit
 import org.bukkit.ChatColor
 

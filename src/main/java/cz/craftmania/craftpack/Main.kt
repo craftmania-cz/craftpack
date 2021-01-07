@@ -1,6 +1,6 @@
-package cz.craftmania.pack
+package cz.craftmania.craftpack
 
-import cz.craftmania.pack.utils.Logger
+import cz.craftmania.craftpack.utils.Logger
 import org.bukkit.plugin.java.JavaPlugin
 
 class Main : JavaPlugin() {
