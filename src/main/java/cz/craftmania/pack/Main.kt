@@ -1,5 +1,6 @@
 package cz.craftmania.pack
 
+import cz.craftmania.pack.utils.Logger
 import org.bukkit.plugin.java.JavaPlugin
 
 class Main : JavaPlugin() {
@@ -8,6 +9,10 @@ class Main : JavaPlugin() {
 
         // Instance
         instance = this
+
+        debug = this.config.getBoolean("debug", false);
+
+        Logger.success("Plugin byl úspěšně načten.")
     }
 
     override fun onDisable() {
@@ -17,5 +22,9 @@ class Main : JavaPlugin() {
     companion object {
         var instance: Main? = null
             private set
+
+        var debug: Boolean = false;
     }
+
+
 }
