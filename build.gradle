@@ -16,7 +16,7 @@ apply plugin: 'kotlin'
 apply plugin: 'maven'
 
 group 'cz.craftmania.pack'
-version '0.0.1'
+version '1.0.0'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -56,5 +56,22 @@ compileKotlin {
 compileTestKotlin {
     kotlinOptions {
         jvmTarget = "14"
+    }
+}
+
+artifacts {
+    archives sourcesJar
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "${nexusUrl}/repository/release") {
+                authentication(userName: nexusUsername, password: nexusPassword)
+            }
+            snapshotRepository(url: "${nexusUrl}/repository/snapshots") {
+                authentication(userName: nexusUsername, password: nexusPassword)
+            }
+        }
     }
 }
