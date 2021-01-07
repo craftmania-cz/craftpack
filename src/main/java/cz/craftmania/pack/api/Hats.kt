@@ -34,4 +34,8 @@ enum class Hats(
     fun getItemStack(): ItemStack {
         return ItemBuilder(this.material).setName(this.itemName).setCustomModelData(this.modelData).setLore("§7Přidáno v: §f" + this.inVersion).build();
     }
+
+    fun getPureItemStack(): ItemStack {
+        return ItemBuilder(this.material).setName(this.itemName).setCustomModelData(this.modelData).build();
+    }
 }
