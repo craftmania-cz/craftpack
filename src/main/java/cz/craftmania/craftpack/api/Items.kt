@@ -27,23 +27,6 @@ enum class Items (
     GIFT_BLUE(9, "§bGift Blue", Material.WHEAT, 200002, "1.0.0"),
     GIFT_RED(10, "§cGift Red", Material.WHEAT, 200003, "1.0.0");
 
-
-    fun getName(): String {
-        return this.itemName
-    }
-
-    fun getMaterial(): Material {
-        return this.material
-    }
-
-    fun getModelData(): Int {
-        return this.modelData
-    }
-
-    fun getAddedVersion(): String {
-        return this.inVersion;
-    }
-
     fun getItemStack(): ItemStack {
         return ItemBuilder(this.material).setName(this.itemName).setCustomModelData(this.modelData).setLore("§7Přidáno v: §f" + this.inVersion).build();
     }
