@@ -25,7 +25,18 @@ enum class Items (
     // Gift Boxes
     GIFT_WAKE_SPECIAL(8, "§9Gift Wake Special", Material.WHEAT, 200001, "1.0.0"),
     GIFT_BLUE(9, "§bGift Blue", Material.WHEAT, 200002, "1.0.0"),
-    GIFT_RED(10, "§cGift Red", Material.WHEAT, 200003, "1.0.0");
+    GIFT_RED(10, "§cGift Red", Material.WHEAT, 200003, "1.0.0"),
+
+    // Stool
+    STOOL_BLACK(100, "§eBlack Stool", Material.SCUTE, 100000, "1.2.0"),
+    STOOL_BLUE(101, "§eBlue Stool", Material.SCUTE, 100001, "1.2.0"),
+    STOOL_LIME(102, "§eLime Stool", Material.SCUTE, 100002, "1.2.0"),
+    STOOL_ORANGE(103, "§eOrange Stool", Material.SCUTE, 100003, "1.2.0"),
+    STOOL_PINK(104, "§ePink Stool", Material.SCUTE, 100004, "1.2.0"),
+    STOOL_PURPLE(105, "§ePurple Stool", Material.SCUTE, 100005, "1.2.0"),
+    STOOL_RED(106, "§eRed Stool", Material.SCUTE, 100006, "1.2.0"),
+    STOOL_WHITE(107, "§eWhite Stool", Material.SCUTE, 100007, "1.2.0"),
+    STOOL_YELLOW(108, "§eYellow Stool", Material.SCUTE, 100008, "1.2.0");
 
     fun getItemStack(): ItemStack {
         return ItemBuilder(this.material).setName(this.itemName).setCustomModelData(this.modelData).setLore("§7Přidáno v: §f" + this.inVersion).build();
