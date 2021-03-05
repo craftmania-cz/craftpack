@@ -23,6 +23,8 @@ enum class Hats(
     BUNNY_EARS(9, "§dBunnyEars", Material.PAPER, 100009, "1.1.0"),
     ZABICKA(10, "§aZabicka", Material.PAPER, 100010, "1.1.0"),
     KACHNICKA(11, "§eKachnicka", Material.PAPER, 100011, "1.2.0"),
+    DIAMOND_PRUT(12, "§eDiamond Prut", Material.PAPER, 100014, "1.2.2"),
+    NARUTO(13, "§dNaruto", Material.PAPER, 100015, "1.2.2"),
 
     // Admin Team Hats
     AT_HELPER(100, "§eHelper Crown", Material.PAPER, 200001, "1.2.0"),
