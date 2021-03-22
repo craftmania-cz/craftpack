@@ -4,7 +4,7 @@ import cz.craftmania.craftcore.spigot.builders.items.ItemBuilder
 import org.bukkit.Material
 import org.bukkit.inventory.ItemStack
 
-enum class Hats(
+enum class Hats (
      private val id: Int,
      private val itemName: String,
      private val material: Material,
@@ -25,6 +25,12 @@ enum class Hats(
     KACHNICKA(11, "§eKachnicka", Material.PAPER, 100011, "1.2.0"),
     DIAMOND_PRUT(12, "§eDiamond Prut", Material.PAPER, 100014, "1.2.2"),
     NARUTO(13, "§dNaruto", Material.PAPER, 100015, "1.2.2"),
+    SHREK(13, "§aShrek", Material.PAPER, 100016, "1.3.0"),
+    COWBOY(14, "§dCowboy", Material.PAPER, 100017, "1.3.0"),
+    NERD_GLASSES(15, "§aNerd Glasses", Material.PAPER, 100018, "1.3.0"),
+    DEER(16, "§eDeer", Material.PAPER, 100019, "1.3.0"),
+    LION(17, "§6Lion", Material.PAPER, 100020, "1.3.0"),
+    EGG_HEAD(18, "§6Egg Head", Material.PAPER, 100021, "1.3.0"),
 
     // Admin Team Hats
     AT_HELPER(100, "§eHelper Crown", Material.PAPER, 200001, "1.2.0"),
@@ -41,6 +47,7 @@ enum class Hats(
     EVENT_CROWN(500, "§eEvent Crown", Material.PAPER, 200010, "1.2.0"),
     WUMPUS(501, "§eWumpus", Material.PAPER, 100012, "1.2.0"),
     WUMPUS_LEAF(502, "§eWumpus Leaf", Material.PAPER, 100013, "1.2.0"),
+    ICE_ROSE_CROWN(503, "§dIce Rose Crown", Material.SUGAR, 100001, "1.3.0"),
 
     // Promotion Hats
     LAST_BREATH(1000, "§bLast Breath", Material.PAPER, 500000, "1.0.2");
