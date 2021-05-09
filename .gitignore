@@ -7,3 +7,5 @@
 
 target/
 build/
+
+.DS_Store
