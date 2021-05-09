@@ -25,7 +25,9 @@ enum class Items (
     // Gift Boxes
     GIFT_WAKE_SPECIAL(8, "§9Gift Wake Special", Material.WHEAT, 200001, "1.0.0"),
     GIFT_BLUE(9, "§bGift Blue", Material.WHEAT, 200002, "1.0.0"),
-    GIFT_RED(10, "§cGift Red", Material.WHEAT, 200003, "1.0.0");
+    GIFT_RED(10, "§cGift Red", Material.WHEAT, 200003, "1.0.0"),
+
+    CRAFTCOIN(11, "§eCraftCoin", Material.WHEAT, 200004, "1.3.3");
 
     fun getItemStack(): ItemStack {
         return ItemBuilder(this.material).setName(this.itemName).setCustomModelData(this.modelData).setLore("§7Přidáno v: §f" + this.inVersion).build();

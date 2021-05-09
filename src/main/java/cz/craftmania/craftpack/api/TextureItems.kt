@@ -14,9 +14,9 @@ enum class TextureItems (
     PREFIX_BUILDER(5, "Builder Prefix", "⻖"),
     PREFIX_ADMIN(6, "Admin Prefix", "⻗"),
     PREFIX_ADMINKA(7, "Adminka Prefix", "⻘"),
-    PREFIX_ARTIST(8, "Artist Prefix", "xxxx"),
+    PREFIX_ARTIST(8, "Artist Prefix", "夒"),
     PREFIX_HELPER(9, "Helper Prefix", "⻙"),
-    PREFIX_HELPERKA(10, "Helperka Prefix", "xxxx"),
+    PREFIX_HELPERKA(10, "Helperka Prefix", "夓"),
     PREFIX_TESTER(11, "Tester Prefix", "⻚"),
     PREFIX_OBSIDIAN(12, "Obsidian Prefix", "⻛"),
     PREFIX_EMERALD(13, "Emerald Prefix", "⻜"),
@@ -55,7 +55,10 @@ enum class TextureItems (
     RARITY_EPIC(153, "Rarity: Epic", "⻳"),
     RARITY_LEGENDARY(154, "Rarity: Legendary", "⼀"),
     RARITY_MYTHIC(155, "Rarity: Mythic", "⼢"),
-    RARITY_LIMITED(156, "Rarity: Limited", "⼣");
+    RARITY_LIMITED(156, "Rarity: Limited", "⼣"),
+
+    AFK_TAG(200, "AFK Tag", "夑"),
+    CHAT_ROOM(201, "Chat Room", "夐");
 
 
     /**

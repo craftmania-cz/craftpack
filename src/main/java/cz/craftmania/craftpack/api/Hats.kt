@@ -31,6 +31,9 @@ enum class Hats (
     DEER(16, "§eDeer", Material.PAPER, 100019, "1.3.0"),
     LION(17, "§6Lion", Material.PAPER, 100020, "1.3.0"),
     EGG_HEAD(18, "§6Egg Head", Material.PAPER, 100021, "1.3.0"),
+    CAT_EARS(19, "§fCat Ears", Material.PAPER, 100022, "1.3.3"),
+    PIRATE_HAT(20, "§9Pirate Hat", Material.PAPER, 100023, "1.3.3"),
+    FLOWERS(21, "§aFlowers Hat", Material.PAPER, 100024, "1.3.3"),
 
     // Admin Team Hats
     AT_HELPER(100, "§eHelper Crown", Material.PAPER, 200001, "1.2.0"),
@@ -44,10 +47,14 @@ enum class Hats (
     AT_BANHAMMER(108, "§eBan Hammer", Material.PAPER, 200009, "1.2.0"),
 
     // Special Hats
-    EVENT_CROWN(500, "§eEvent Crown", Material.PAPER, 200010, "1.2.0"),
     WUMPUS(501, "§eWumpus", Material.PAPER, 100012, "1.2.0"),
     WUMPUS_LEAF(502, "§eWumpus Leaf", Material.PAPER, 100013, "1.2.0"),
     ICE_ROSE_CROWN(503, "§dIce Rose Crown", Material.SUGAR, 100001, "1.3.0"),
+
+    // Events
+    BRONZE_TROPHY(600, "§6Bronze Trophy", Material.PAPER, 200010, "1.3.3"),
+    SILVER_TROPHY(601, "§7Silver Trophy", Material.PAPER, 200011, "1.3.3"),
+    GOLD_TROPHY(602, "§eGold Trophy", Material.PAPER, 200012, "1.3.3"),
 
     // Promotion Hats
     LAST_BREATH(1000, "§bLast Breath", Material.PAPER, 500000, "1.0.2");
