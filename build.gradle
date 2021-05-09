@@ -18,8 +18,8 @@ apply plugin: 'maven'
 group 'cz.craftmania.craftpack'
 version '1.3.3'
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+sourceCompatibility = 11
+targetCompatibility = 11
 
 // Nastaveni UTF
 tasks.withType(JavaCompile) {
@@ -50,12 +50,12 @@ task compilePlugin(type: Jar) {
 }
 compileKotlin {
     kotlinOptions {
-        jvmTarget = "14"
+        jvmTarget = "11"
     }
 }
 compileTestKotlin {
     kotlinOptions {
-        jvmTarget = "14"
+        jvmTarget = "11"
     }
 }
 
