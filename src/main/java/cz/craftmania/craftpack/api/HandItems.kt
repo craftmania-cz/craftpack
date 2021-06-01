@@ -12,7 +12,8 @@ enum class HandItems (
     private val inVersion: String) {
 
     EASTER_STICK(1, "§ePpmlázka", Material.STICK, 100001, "1.3.0"),
-    KUFR(2, "§eKufr", Material.LIME_DYE, 100001, "1.3.3");
+    KUFR(2, "§eKufr", Material.LIME_DYE, 100001, "1.3.3"),
+    BABY_YODA(3, "§eBaby Yoda", Material.LIME_DYE, 100002, "1.3.5");
 
     fun getItemStack(): ItemStack {
         return ItemBuilder(this.material).setName(this.itemName).setCustomModelData(this.modelData).setLore("§7Přidáno v: §f" + this.inVersion).build();

@@ -34,6 +34,8 @@ enum class Hats (
     CAT_EARS(19, "§fCat Ears", Material.PAPER, 100022, "1.3.3"),
     PIRATE_HAT(20, "§9Pirate Hat", Material.PAPER, 100023, "1.3.3"),
     FLOWERS(21, "§aFlowers Hat", Material.PAPER, 100024, "1.3.3"),
+    MANDALORIAN(22, "§cMandalorian", Material.PAPER, 100025, "1.3.5"),
+    YODA(23, "§cOld Yoda", Material.PAPER, 100026, "1.3.5"),
 
     // Admin Team Hats
     AT_HELPER(100, "§eHelper Crown", Material.PAPER, 200001, "1.2.0"),
