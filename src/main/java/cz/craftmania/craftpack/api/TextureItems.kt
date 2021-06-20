@@ -58,8 +58,18 @@ enum class TextureItems (
     RARITY_LIMITED(156, "Rarity: Limited", "⼣"),
 
     AFK_TAG(200, "AFK Tag", "夑"),
-    CHAT_ROOM(201, "Chat Room", "夐");
+    CHAT_ROOM(201, "Chat Room", "夐"),
+    SERVER_TAG(202, "Server Tag", "⼧"),
 
+    SERVER_SURVIVAL(250, "Survival Tag", "⼥"),
+    SERVER_SKYBLOCK(251, "Skyblock Tag", "⼦"),
+    SERVER_CREATIVE(252, "Creative Tag", "⼫"),
+    SERVER_VANILLA(253, "Vanilla Tag", "⼤"),
+    SERVER_ANARCHY(254, "Anarchy Tag", "⼬"),
+    SERVER_PRISON(255, "Prison Tag", "⼨"),
+    SERVER_ONEBLOCK(256, "Server OneBlock", "[x]"),
+    SERVER_EVENT(257, "Event Server", "⼪"),
+    SERVER_LOBBY(258, "Lobby server", "⼩");
 
     /**
      * Vrací pouze znak, pro použití v menu nebo jako čistý text na vložení.
