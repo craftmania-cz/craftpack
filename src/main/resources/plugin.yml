@@ -1,5 +1,5 @@
 name: CraftPack
-version: 1.3.5
+version: 1.3.6
 description: Plugin for managing our server Resource Pack.
 author: MrWakeCZ
 main: cz.craftmania.craftpack.Main
