@@ -7,13 +7,11 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
-plugins {
-    id 'java'
-}
 
 apply plugin: 'java'
 apply plugin: 'kotlin'
 apply plugin: 'maven'
+apply plugin: 'maven-publish'
 
 group 'cz.craftmania.craftpack'
 version '1.3.6'
@@ -26,7 +24,6 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
-clean { delete "./target" }
 clean { delete "./build" }
 
 repositories {
@@ -40,7 +37,6 @@ dependencies {
         exclude group: 'net.md-5'
     }
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-
     compileOnly 'cz.craftmania.craftcore:craftcore:2.4.0'
 }
 
@@ -68,15 +64,20 @@ artifacts {
     archives sourcesJar
 }
 
-uploadArchives {
+publishing {
     repositories {
-        mavenDeployer {
-            repository(url: "${nexusUrl}/repository/release") {
-                authentication(userName: nexusUsername, password: nexusPassword)
+        maven {
+            name = "craftpack"
+            url = uri("https://maven.pkg.github.com/craftmania-cz/craftpack")
+            credentials {
+                username = GPR_USER
+                password = GPR_TOKEN
             }
-            snapshotRepository(url: "${nexusUrl}/repository/snapshots") {
-                authentication(userName: nexusUsername, password: nexusPassword)
-            }
+        }
+    }
+    publications {
+        gpr(MavenPublication) {
+            from(components.java)
         }
     }
 }

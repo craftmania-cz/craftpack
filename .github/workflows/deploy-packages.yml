@@ -18,6 +18,6 @@ jobs:
         run: ./gradlew compilePlugin
       - name: Deploy action
         env:
-          PACKAGES_USER: ${{ secrets.PACKAGES_USER }}
-          PACKAGES_PASSWORD: ${{ secrets.PACKAGES_PASSWORD }}
-        run: ./gradlew uploadArchives -PnexusUsername=$PACKAGES_USER -PnexusPassword=$PACKAGES_PASSWORD
+          GPR_USER: ${{ secrets.GPR_USER }}
+          GPR_TOKEN: ${{ secrets.GPR_TOKEN }}
+        run: ./gradlew publish -PGPR_USER=$GPR_USER -PGPR_TOKEN=$GPR_TOKEN
