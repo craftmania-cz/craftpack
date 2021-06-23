@@ -5,6 +5,9 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      GPR_USER: ${{ secrets.GPR_USER }}
+      GPR_TOKEN: ${{ secrets.GPR_TOKEN }}
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK 11
@@ -12,7 +15,7 @@ jobs:
         with:
           java-version: 11
       - name: Build plugin
-        run: ./gradlew compilePlugin
+        run: ./gradlew compilePlugin -PGPR_USER=$GPR_USER -PGPR_TOKEN=$GPR_TOKEN
       - name: Upload artifacts
         uses: actions/upload-artifact@v1
         with:
