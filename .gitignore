@@ -9,3 +9,5 @@ target/
 build/
 
 .DS_Store
+
+gradle.properties
