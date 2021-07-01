@@ -37,6 +37,12 @@ enum class Hats (
     MANDALORIAN(22, "§cMandalorian", Material.PAPER, 100025, "1.3.5"),
     YODA(23, "§cOld Yoda", Material.PAPER, 100026, "1.3.5"),
     RADIOVKA(24, "§eRadiovka", Material.PAPER, 100027, "1.3.6"),
+    HALO(25, "§eHalo", Material.PAPER, 100028, "1.3.7"),
+    GOLEM_HEAD(26, "§eGolem Head", Material.PAPER, 100029, "1.3.7"),
+    PENGUIN(27, "§ePenguin", Material.PAPER, 100030, "1.3.7"),
+    CANDY_HAT(28, "§bCandy Hat", Material.PAPER, 100031, "1.3.7"),
+    IRON_MAN(29, "§cIron Man", Material.PAPER, 100032, "1.3.7"),
+    TIGER_HEAD(30, "§eTiger Head", Material.PAPER, 100033, "1.3.7"),
 
     // Admin Team Hats
     AT_HELPER(100, "§eHelper Crown", Material.PAPER, 200001, "1.2.0"),
