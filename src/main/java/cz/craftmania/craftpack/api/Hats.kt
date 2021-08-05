@@ -43,6 +43,10 @@ enum class Hats (
     CANDY_HAT(28, "§bCandy Hat", Material.PAPER, 100031, "1.3.7"),
     IRON_MAN(29, "§cIron Man", Material.PAPER, 100032, "1.3.7"),
     TIGER_HEAD(30, "§eTiger Head", Material.PAPER, 100033, "1.3.7"),
+    FISH_BOWL(31, "§eFish Bowl", Material.PAPER, 100034, "1.3.8"),
+    ASTRONAUT(32, "§bAstronaut", Material.PAPER, 100035, "1.3.8"),
+    DEVIL(33, "§cDevil", Material.PAPER, 100036, "1.3.8"),
+    TIKI_MASK(34, "§eTiki Mask", Material.PAPER, 100037, "1.3.8"),
 
     // Admin Team Hats
     AT_HELPER(100, "§eHelper Crown", Material.PAPER, 200001, "1.2.0"),
