@@ -27,3 +27,17 @@ dependencies {
     compileOnly group: 'cz.craftmania.craftpack', name: 'craftpack', version: '1.2.0'
 }
 ```
+
+## Tabulka itemů
+Tato tabulka obsahuje, které itemy se na co používají.
+
+| Cosmetic Type | Minecraft Type |
+| :--- | :---: |
+| CoinShop Hats | `PAPER` |
+| Interactible Hats | `SUGAR` |
+| Hand Items (Attack type) | `STICK` |
+| Hand Items (Decorative) | `LIME_DYE` |
+| Furniture | `SCUTE` |
+| Crates | `FIREWORK_STAR` |
+| Interactible Holograms | `WHEAT` |
+| GUI Items | `IRON_NUGGET` |
