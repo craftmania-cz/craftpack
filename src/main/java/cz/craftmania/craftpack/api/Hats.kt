@@ -47,6 +47,7 @@ enum class Hats (
     ASTRONAUT(32, "§bAstronaut", Material.PAPER, 100035, "1.3.8"),
     DEVIL(33, "§cDevil", Material.PAPER, 100036, "1.3.8"),
     TIKI_MASK(34, "§eTiki Mask", Material.PAPER, 100037, "1.3.8"),
+    DARTH_VADER(35, "§eDarth Vader", Material.PAPER, 100038, "1.4.0"),
 
     // Admin Team Hats
     AT_HELPER(100, "§eHelper Crown", Material.PAPER, 200001, "1.2.0"),
@@ -58,6 +59,8 @@ enum class Hats (
     AT_OWNER(106, "§eOwner Crown", Material.PAPER, 200007, "1.2.0"),
     AT_STAFF(107, "§eStaff Crown", Material.PAPER, 200008, "1.2.0"),
     AT_BANHAMMER(108, "§eBan Hammer", Material.PAPER, 200009, "1.2.0"),
+    AT_MODERATOR(109, "§eModerator Crown", Material.PAPER, 200010, "1.4.0"),
+    AT_TESTER(110, "§eTester Crown", Material.PAPER, 200011, "1.4.0"),
 
     // Special Hats
     WUMPUS(501, "§eWumpus", Material.PAPER, 100012, "1.2.0"),
