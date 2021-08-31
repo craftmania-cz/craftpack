@@ -18,6 +18,6 @@ jobs:
         with:
           java-version: 16
       - name: Build plugin
-        run: ./gradlew compilePlugin -PGPR_USER=$GPR_USER -PGPR_TOKEN=$GPR_TOKEN
+        run: ./gradlew jar -PGPR_USER=$GPR_USER -PGPR_TOKEN=$GPR_TOKEN
       - name: Deploy action
         run: ./gradlew publish -PGPR_USER=$GPR_USER -PGPR_TOKEN=$GPR_TOKEN
