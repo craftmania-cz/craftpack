@@ -49,7 +49,9 @@ enum class Furniture (
 
     // Table
     COFFEE_TABLE(140, "§eCoffee Table", Material.SCUTE, 100180, "1.4.0"),
-    COFFEE_TABLE_EMPTY(141, "§eCoffee Table (Empty)", Material.SCUTE, 100181, "1.4.0");
+    COFFEE_TABLE_EMPTY(141, "§eCoffee Table (Empty)", Material.SCUTE, 100181, "1.4.0"),
+
+    POP_WAKE(150, "§ePop Wake", Material.SCUTE, 100200, "1.4.1");
 
     fun getItemStack(): ItemStack {
         return ItemBuilder(this.material).setName(this.itemName).setCustomModelData(this.modelData).setLore("§7Přidáno v: §f" + this.inVersion).build();

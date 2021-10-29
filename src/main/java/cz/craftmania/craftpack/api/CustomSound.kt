@@ -10,6 +10,11 @@ enum class CustomSound (
     REGION_ENTER(2, "Region Enter Sound", "custom.soundeffect.chatroom.enter", "1.3.7"),
     REGION_LEAVE(3, "Region Leave Sound", "custom.soundeffect.chatroom.exit", "1.3.7"),
 
+    DBD_LAMPKIN_THEME(10, "DBD: Lampking Theme", "custom.soundeffect.dbd.lampking_theme", "1.4.1"),
+    DBD_MATCH_BEGINS(11, "DBD: Match Begins", "custom.soundeffect.dbd.match_begins", "1.4.1"),
+    DBD_SMALL_GAME(12, "DBD: Small Game", "custom.soundeffect.dbd.small_game", "1.4.1"),
+    DBD_HEARTHBEAT(13, "DBD: Heathbeat", "custom.soundeffect.dbd.heartbeat", "1.4.1"),
+
     ERROR(4, "Error Sound", "custom.soundeffect.error", "1.3.7");
 
     fun get(): String {

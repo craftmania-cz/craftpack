@@ -48,6 +48,11 @@ enum class Hats (
     DEVIL(33, "§cDevil", Material.PAPER, 100036, "1.3.8"),
     TIKI_MASK(34, "§eTiki Mask", Material.PAPER, 100037, "1.3.8"),
     DARTH_VADER(35, "§eDarth Vader", Material.PAPER, 100038, "1.4.0"),
+    IMPOSTOR(36, "§eImpostor", Material.PAPER, 100039, "1.4.1"),
+    WITCH(37, "§eWitch Hat", Material.PAPER, 100040, "1.4.1"),
+    SHARK(38, "§eShark Hat", Material.PAPER, 100041, "1.4.1"),
+    REAPER_HOODIE(39, "§eReaper Hoodie", Material.PAPER, 100042, "1.4.1"),
+    PUMPKIN_KING(40, "§ePumpkin King", Material.PAPER, 100043, "1.4.1"),
 
     // Admin Team Hats
     AT_HELPER(100, "§eHelper Crown", Material.PAPER, 200001, "1.2.0"),
