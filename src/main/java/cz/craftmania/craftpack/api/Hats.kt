@@ -53,6 +53,7 @@ enum class Hats (
     SHARK(38, "§eShark Hat", Material.PAPER, 100041, "1.4.1"),
     REAPER_HOODIE(39, "§eReaper Hoodie", Material.PAPER, 100042, "1.4.1"),
     PUMPKIN_KING(40, "§ePumpkin King", Material.PAPER, 100043, "1.4.1"),
+    TETRIS(41, "§eTetris Hat", Material.PAPER, 100044, "1.4.2"),
 
     // Admin Team Hats
     AT_HELPER(100, "§eHelper Crown", Material.PAPER, 200001, "1.2.0"),
