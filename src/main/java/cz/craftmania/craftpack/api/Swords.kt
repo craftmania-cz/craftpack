@@ -19,6 +19,7 @@ enum class Swords (
     LIGHTSABER_RED(6, "§cLightsaber: Red", Material.NETHERITE_SWORD, 100006, "1.4.0"),
     SCYTHE(7, "§eScythe", Material.NETHERITE_SWORD, 100007, "1.4.1"),
     SCORPION(8, "§eScorpion Sword", Material.NETHERITE_SWORD, 100008, "1.4.2"),
+    FROST_SWORD(9, "§bFrost Sword", Material.NETHERITE_SWORD, 100009, "1.4.3"),
 
     FOREST_SWORD(30, "§aForest Sword", Material.WOODEN_SWORD, 100001, "1.3.7"),
 

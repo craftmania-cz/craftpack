@@ -11,7 +11,8 @@ enum class Bows (
     private val modelData: Int,
     private val inVersion: String) {
 
-    FOREST(1, "§aForest Bow", Material.BOW, 100001, "1.3.7");
+    FOREST(1, "§aForest Bow", Material.BOW, 100001, "1.3.7"),
+    FROST(2, "§bFrost Bow", Material.BOW, 100002, "1.4.3");
 
     fun getItemStack(): ItemStack {
         return ItemBuilder(this.material).setName(this.itemName).setCustomModelData(this.modelData).setLore("§7Přidáno v: §f" + this.inVersion).build();
