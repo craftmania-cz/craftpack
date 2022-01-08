@@ -78,7 +78,19 @@ enum class TextureItems (
     SERVER_PRISON(255, "Prison Tag", "⼨"),
     SERVER_ONEBLOCK(256, "Server OneBlock", "[x]"),
     SERVER_EVENT(257, "Event Server", "⼪"),
-    SERVER_LOBBY(258, "Lobby server", "⼩");
+    SERVER_LOBBY(258, "Lobby server", "⼩"),
+    SERVER_PARKOUR(259, "Parkour sserver", "솸"),
+
+    PARKOUR_RANK_NOOB(300, "Parkour Rank Noob", "솹"),
+    PARKOUR_RANK_ROOKIE(301, "Parkour Rank Rookie", "솺"),
+    PARKOUR_RANK_ADEPT(302, "Parkour Rank Adept", "솻"),
+    PARKOUR_RANK_SKILLED(303, "Parkour Rank Skilled", "솼"),
+    PARKOUR_RANK_EXPERT(304, "Parkour Rank Expert", "솽"),
+    PARKOUR_RANK_BEAST(305, "Parkour Rank Beast", "솾"),
+    PARKOUR_RANK_MASTER(306, "Parkour Rank Master", "솿"),
+    PARKOUR_RANK_GOD(307, "Parkour Rank God", "쇀"),
+    PARKOUR_RANK_LEGEND(308, "Parkour Rank Legend", "쇁"),
+    PARKOUR_RANK_ZABICKA(309, "Parkour Rank Zabicka", "쇂");
 
     /**
      * Vrací pouze znak, pro použití v menu nebo jako čistý text na vložení.
