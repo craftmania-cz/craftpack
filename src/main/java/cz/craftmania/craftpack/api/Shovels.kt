@@ -11,7 +11,8 @@ enum class Shovels (
     private val modelData: Int,
     private val inVersion: String) {
 
-    ICE_ROSE_SHOVEL(1, "§dIce Rose Shovel", Material.NETHERITE_SHOVEL, 100001, "1.3.0");
+    ICE_ROSE_SHOVEL(1, "§dIce Rose Shovel", Material.NETHERITE_SHOVEL, 100001, "1.3.0"),
+    PLANT_SET_SHOVEL(2, "§aPlant Set Shovel", Material.NETHERITE_SHOVEL, 100002, "1.4.3");
 
     fun getItemStack(): ItemStack {
         return ItemBuilder(this.material).setName(this.itemName).setCustomModelData(this.modelData).setLore("§7Přidáno v: §f" + this.inVersion).build();

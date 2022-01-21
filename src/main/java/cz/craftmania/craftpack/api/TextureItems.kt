@@ -23,6 +23,7 @@ enum class TextureItems (
     PREFIX_DIAMOND(14, "Diamond Prefix", "⻝"),
     PREFIX_GOLD(15, "Gold Prefix", "⻞"),
     PREFIX_HRAC(16, "Hrac prefix", "⻯"),
+    PREFIX_MODERATOR(17, "Moderator prefix", "쇃"),
 
     CM_LOGO_BIG(25, "CM LOGO", "⻟"),
     CM_LOGO_ROUNDED(26, "CM LOGO (ROUND)", "⻎"),

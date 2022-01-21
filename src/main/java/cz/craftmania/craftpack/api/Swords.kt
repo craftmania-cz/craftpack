@@ -20,8 +20,11 @@ enum class Swords (
     SCYTHE(7, "§eScythe", Material.NETHERITE_SWORD, 100007, "1.4.1"),
     SCORPION(8, "§eScorpion Sword", Material.NETHERITE_SWORD, 100008, "1.4.2"),
     FROST_SWORD(9, "§bFrost Sword", Material.NETHERITE_SWORD, 100009, "1.4.3"),
+    PLANT_SET_SWORD(10, "§aPlant Set Sword", Material.NETHERITE_PICKAXE, 100010, "1.4.5"),
 
     FOREST_SWORD(30, "§aForest Sword", Material.WOODEN_SWORD, 100001, "1.3.7"),
+
+    MECHA_SWORD(50, "§aMecha Sword", Material.IRON_SWORD, 100001, "1.4.5"),
 
     POMLAZKA(100, "§6Pomlázka", Material.STICK, 100001, "1.3.0");
 

@@ -64,6 +64,7 @@ enum class Hats (
     PARTY_HAT(49, "§dParty Hat", Material.PAPER, 100052, "1.4.3"),
     NERD_GLASSES_2(50, "§aNerd Glasses", Material.PAPER, 100053, "1.4.3"),
     NERD_GLASSES_3(51, "§aNerd Glasses", Material.PAPER, 100054, "1.4.3"),
+    HULK(52, "§eHulk", Material.PAPER, 100055, "1.4.5"),
 
     // Admin Team Hats
     AT_HELPER(100, "§eHelper Crown", Material.PAPER, 200001, "1.2.0"),
