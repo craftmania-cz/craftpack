@@ -68,17 +68,19 @@ artifacts {
 publishing {
     repositories {
         maven {
-            name = "craftpack"
-            url = uri("https://maven.pkg.github.com/craftmania-cz/craftpack")
-            credentials {
-                username = GPR_USER
-                password = GPR_TOKEN
+            url "https://gitlab.com/api/v4/projects/33496337/packages/maven"
+            credentials(HttpHeaderCredentials) {
+                name = "Private-Token"
+                value = GITLAB_TOKEN
+            }
+            authentication {
+                header(HttpHeaderAuthentication)
             }
         }
     }
     publications {
-        gpr(MavenPublication) {
-            from(components.java)
+        library(MavenPublication) {
+            from components.java
         }
     }
 }
