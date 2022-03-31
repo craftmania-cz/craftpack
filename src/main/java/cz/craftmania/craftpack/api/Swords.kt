@@ -21,6 +21,8 @@ enum class Swords (
     SCORPION(8, "§eScorpion Sword", Material.NETHERITE_SWORD, 100008, "1.4.2"),
     FROST_SWORD(9, "§bFrost Sword", Material.NETHERITE_SWORD, 100009, "1.4.3"),
     PLANT_SET_SWORD(10, "§aPlant Set Sword", Material.NETHERITE_SWORD, 100010, "1.4.5"),
+    BANANA_SWORD(11, "§eBanana Sword", Material.NETHERITE_SWORD, 100011, "2.0.3"),
+    BANANA_SCYTHE(12, "§eBanana Scythe", Material.NETHERITE_SWORD, 100012, "2.0.3"),
 
     FOREST_SWORD(30, "§aForest Sword", Material.WOODEN_SWORD, 100001, "1.3.7"),
 
