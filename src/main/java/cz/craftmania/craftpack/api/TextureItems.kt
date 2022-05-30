@@ -55,7 +55,11 @@ enum class TextureItems (
     ERROR_YELLOW(71, "Error: Yellow", "⻫"),
     ERROR_RED(72, "Error: Red", "⻬"),
 
+    @Deprecated(replaceWith = ReplaceWith("BANK_SUCCESS"), level = DeprecationLevel.ERROR, message = "Nahrazeno s BANK_SUCCESS")
     GREEN_DOLAR(80, "Green Dollar", "⻮"),
+    BANK_SUCCESS(81, "Bank Success", "⻮"),
+    BANK_WARNING(82, "Bank Warning", "쇛"),
+    BANK_ERROR(83, "Bank Error", "쇜"),
 
     COMPASS(100, "Compass", "⻭"),
 
@@ -91,7 +95,14 @@ enum class TextureItems (
     PARKOUR_RANK_MASTER(306, "Parkour Rank Master", "솿"),
     PARKOUR_RANK_GOD(307, "Parkour Rank God", "쇀"),
     PARKOUR_RANK_LEGEND(308, "Parkour Rank Legend", "쇁"),
-    PARKOUR_RANK_ZABICKA(309, "Parkour Rank Zabicka", "쇂");
+    PARKOUR_RANK_ZABICKA(309, "Parkour Rank Zabicka", "쇂"),
+
+    PLUGIN_JOBS(350, "Plugin Jobs", "쇝"),
+    PLUGIN_TRYME(351, "Plugin TryMe", "쇞"),
+    PLUGIN_LANDS(352, "Plugin Lands", "쇟"),
+    PLUGIN_VOTEPARTY(353, "Plugin VoteParty", "쇠"),
+    PLUGIN_DRAGON_RUN(354, "Plugin DragonRun", "쇡"),
+    PLUGIN_PINATA(355, "Plugin Pinata", "쇢");
 
     /**
      * Vrací pouze znak, pro použití v menu nebo jako čistý text na vložení.
