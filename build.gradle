@@ -13,7 +13,7 @@ apply plugin: 'kotlin'
 apply plugin: 'maven-publish'
 
 group 'cz.craftmania.craftpack'
-version '1.4.7'
+version '1.4.8'
 
 sourceCompatibility = 16
 targetCompatibility = 16
@@ -29,10 +29,14 @@ repositories {
     mavenCentral()
     maven { url "https://hub.spigotmc.org/nexus/content/repositories/snapshots/" }
     maven {
-        url "https://maven.pkg.github.com/craftmania-cz/craftcore"
-        credentials {
-            username = GPR_USER
-            password = GPR_TOKEN
+        url "https://gitlab.com/api/v4/groups/craftmania/-/packages/maven"
+        name "GitLab"
+        credentials(HttpHeaderCredentials) {
+            name = 'Private-Token'
+            value = GITLAB_TOKEN
+        }
+        authentication {
+            header(HttpHeaderAuthentication)
         }
     }
 }
@@ -42,7 +46,7 @@ dependencies {
         exclude group: 'net.md-5'
     }
     implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.5.21'
-    compileOnly 'cz.craftmania.craftcore:craftcore:2.6.1-beta'
+    compileOnly 'cz.craftmania.craftcore:craftcore:2.9'
 }
 
 compileKotlin {
