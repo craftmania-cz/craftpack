@@ -58,8 +58,8 @@ enum class TextureItems (
     @Deprecated(replaceWith = ReplaceWith("BANK_SUCCESS"), level = DeprecationLevel.ERROR, message = "Nahrazeno s BANK_SUCCESS")
     GREEN_DOLAR(80, "Green Dollar", "⻮"),
     BANK_SUCCESS(81, "Bank Success", "⻮"),
-    BANK_WARNING(82, "Bank Warning", "쇛"),
-    BANK_ERROR(83, "Bank Error", "쇜"),
+    BANK_INFO(82, "Bank Warning", "쇜"),
+    BANK_ERROR(83, "Bank Error", "쇛"),
 
     COMPASS(100, "Compass", "⻭"),
 
