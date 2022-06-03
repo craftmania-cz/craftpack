@@ -16,7 +16,8 @@ enum class HandItems (
     BABY_YODA(3, "§eBaby Yoda", Material.LIME_DYE, 100002, "1.3.5"),
     MECHA_FIST(4, "§eMecha Fist", Material.STICK, 100002, "1.4.2"),
     BASEBALL_BAT(5, "§eBaseball Bat", Material.STICK, 100003, "1.4.3"),
-    MONKEY_TAIL(6, "§eMonkey Tail", Material.STICK, 100004, "2.0.3");
+    MONKEY_TAIL(6, "§eMonkey Tail", Material.STICK, 100004, "2.0.3"),
+    ATLANTIS_STAFF(7, "Atlantis Staff", Material.STICK, 100005, "2.2.0");
 
     fun getItemStack(): ItemStack {
         return ItemBuilder(this.material).setName(this.itemName).setCustomModelData(this.modelData).setLore("§7Přidáno v: §f" + this.inVersion).build();

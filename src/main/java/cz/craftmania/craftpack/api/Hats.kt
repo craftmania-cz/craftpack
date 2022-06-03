@@ -70,6 +70,8 @@ enum class Hats (
     WIZARD(55, "§eWizard", Material.PAPER, 100058, "2.0.2"),
     NARWHAL_HORN(56, "§eNarwal Horn", Material.PAPER, 100059, "2.0.3"),
     PINEAPPLE_HELMET(57, "§ePineapple Helmet", Material.PAPER, 100060, "2.0.3"),
+    ANGLER_FISH(58, "§eAngler Fish", Material.PAPER, 100061, "2.2.0"),
+    SCUBA_GOGGLES(59, "§eScuba Goggles", Material.PAPER, 100062, "2.2.0"),
 
     // Admin Team Hats
     AT_HELPER(100, "§eHelper Crown", Material.PAPER, 200001, "1.2.0"),
