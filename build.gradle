@@ -13,7 +13,7 @@ apply plugin: 'kotlin'
 apply plugin: 'maven-publish'
 
 group 'cz.craftmania.craftpack'
-version '1.4.8'
+version '1.4.9'
 
 sourceCompatibility = 16
 targetCompatibility = 16
