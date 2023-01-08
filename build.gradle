@@ -4,7 +4,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10"
     }
 }
 
@@ -45,7 +45,7 @@ dependencies {
     compileOnly ('org.spigotmc:spigot-api:1.16.4-R0.1-SNAPSHOT') {
         exclude group: 'net.md-5'
     }
-    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.5.21'
+    compileOnly 'org.jetbrains.kotlin:kotlin-stdlib:1.7.10'
     compileOnly 'cz.craftmania.craftcore:craftcore:2.9'
 }
 

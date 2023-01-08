@@ -5,4 +5,4 @@ author: MrWakeCZ
 main: cz.craftmania.craftpack.Main
 api-version: "1.16"
 libraries:
-  - "org.jetbrains.kotlin:kotlin-stdlib:1.5.21"
+  - "org.jetbrains.kotlin:kotlin-stdlib:1.7.10"
