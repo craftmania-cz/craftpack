@@ -29,14 +29,10 @@ repositories {
     mavenCentral()
     maven { url "https://hub.spigotmc.org/nexus/content/repositories/snapshots/" }
     maven {
-        url "https://gitlab.com/api/v4/groups/craftmania/-/packages/maven"
-        name "GitLab"
-        credentials(HttpHeaderCredentials) {
-            name = 'Private-Token'
-            value = GITLAB_TOKEN
-        }
-        authentication {
-            header(HttpHeaderAuthentication)
+        url "https://maven.pkg.github.com/craftmania-cz/craftcore"
+        credentials {
+            username = GPR_USER
+            password = GPR_TOKEN
         }
     }
 }
@@ -46,7 +42,7 @@ dependencies {
         exclude group: 'net.md-5'
     }
     compileOnly 'org.jetbrains.kotlin:kotlin-stdlib:1.7.10'
-    compileOnly 'cz.craftmania.craftcore:craftcore:2.9'
+    compileOnly 'cz.craftmania.craftcore:craftcore:2.11'
 }
 
 compileKotlin {
@@ -72,13 +68,11 @@ artifacts {
 publishing {
     repositories {
         maven {
-            url "https://gitlab.com/api/v4/projects/33496337/packages/maven"
-            credentials(HttpHeaderCredentials) {
-                name = "Private-Token"
-                value = GITLAB_TOKEN
-            }
-            authentication {
-                header(HttpHeaderAuthentication)
+            name = "craftlibs"
+            url = uri("https://maven.pkg.github.com/craftmania-cz/craftpack")
+            credentials {
+                username = GPR_USER
+                password = GPR_TOKEN
             }
         }
     }
